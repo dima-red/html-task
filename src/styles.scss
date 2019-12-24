@@ -1,0 +1,147 @@
+@import './assets/comon/colors.scss';
+@import './assets/comon/social-icons.scss';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-width: 800px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+.background-orange {
+    background-color: $orange;
+}
+
+.background-yellow {
+    background-color: $yellow;
+}
+
+.color-orange {
+    color: $orange;
+}
+
+.color-yellow {
+    color: $yellow;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+
+    .logo-wrapper {
+        width: 15%;
+
+        .logo {
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            color: $primary;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    .nav-bar {
+        text-align: right;
+        width: 70%;
+
+        a {
+            text-decoration: none;
+            color: $quaternary;
+
+            .nav-item {
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+        }
+    }
+
+    .space {
+        margin-left: 30px;
+    }
+
+    input {
+        border: none;
+
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $secondary;
+    display: flex;
+
+    section {
+        figure {
+            picture {
+                img {
+                    width: 60%;
+                }
+            }
+
+            figcaption {
+
+                span {
+                    margin-top: 20px;
+                    font-size: 12px;
+                }
+            }
+
+        }
+
+        .text-content {
+
+            h4 {
+                margin-top: 10px;
+            }
+            
+            p {
+                margin-top: 20px;
+                font-size: 12px;
+                width: 60%;
+            }
+        }
+
+        .continue-block {
+            display: flex;
+            margin-top: 30px;
+            width: 60%;
+            justify-content: space-between;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+
+            button {
+                background-color: $quaternary;
+                border: none;
+                color: $primary;
+                font-size: 11px;
+                padding: 10px;
+                cursor: pointer;
+                // width: 70%;
+            }
+
+            ul {
+                // width: 30%;
+            }
+        }
+    }
+
+    aside {
+
+    }
+}
